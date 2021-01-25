@@ -5,7 +5,7 @@
 
   tasks:
     - name: Try to log in as openshift admin
-      command: oc login -u system:admin
+      command: "oc login {{ osbs_box_oc_login_cmd_params }}"
       register: oc_login
       changed_when: oc_login.rc == 0
       # If login failed, cluster is probably down - that means steps which use

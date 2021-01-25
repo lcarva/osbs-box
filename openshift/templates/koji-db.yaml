@@ -52,7 +52,7 @@ objects:
         dockerStrategy:
           from:
             kind: DockerImage
-            name: postgres:12
+            name: quay.io/lucarval/postgres:12
       output:
         to:
           kind: ImageStreamTag

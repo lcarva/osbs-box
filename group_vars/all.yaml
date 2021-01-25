@@ -17,6 +17,10 @@ osbs_box_data_dir: "{{ ansible_env.HOME }}/.local/share/osbs-box"
 #   doing so will make external URLs unreachable from inside containers.
 osbs_box_host: "{{ ansible_default_ipv4.address }}.nip.io"
 
+# Parameters used during the "oc login" command. Change this to a cluster admin
+# user if running ansible from a remote host. You may also need to set the password,
+# and the hostname.
+osbs_box_oc_login_cmd_params: "-u system:admin"
 
 ### Openshift settings
 

@@ -1,4 +1,4 @@
-FROM postgres
+FROM quay.io/lucarval/postgres:12
 
 EXPOSE 5432
 
